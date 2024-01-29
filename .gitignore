@@ -4,3 +4,14 @@ dados/cleaned/BR_Municipios_2022.shp
 dados/cleaned/BR_Municipios_2022.prj
 dados/cleaned/BR_Municipios_2022.dbf
 dados/cleaned/BR_Municipios_2022.cpg
+dados/processed/mun_conectividade.cpg
+dados/processed/mun_conectividade.dbf
+dados/processed/mun_conectividade.prj
+dados/processed/mun_conectividade.qmd
+dados/processed/mun_conectividade.shp
+dados/processed/mun_conectividade.shx
+dados/raw/BR_Municipios_2022.cpg
+dados/raw/BR_Municipios_2022.dbf
+dados/raw/BR_Municipios_2022.prj
+dados/raw/BR_Municipios_2022.shp
+dados/raw/BR_Municipios_2022.shx
