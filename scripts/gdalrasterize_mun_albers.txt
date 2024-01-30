@@ -1,0 +1,10 @@
+gdal_rasterize -a CD_MUN -l mun_conectividade_albers -ot UInt32 -tr 1000 1000 -te 4769350.64341917 8138046.97010598 6458232.70240898 11279679.3314372 -co "COMPRESS=DEFLATE" -co "ZLEVEL=9" -co "PREDICTOR=2" -co "BIGTIFF=IF_SAFER" -co "NUM_THREADS=6" D:\GIT_WORKSPACE\conectividade-no-campo\dados\processed\mun_conectividade_albers.shp D:\GIT_WORKSPACE\conectividade-no-campo\dados\cleaned\mun_conectividade_albers.tif
+
+
+-a CD_MUN
+-l mun_conectividade_albers
+-ot UInt32
+-co "COMPRESS=DEFLATE" -co "ZLEVEL=9" -co "PREDICTOR=2" -co "BIGTIFF=IF_SAFER" -co "NUM_THREADS=6"
+-tr 1000 1000
+<input> D:\GIT_WORKSPACE\conectividade-no-campo\dados\processed\mun_conectividade_albers
+<output> D:\GIT_WORKSPACE\conectividade-no-campo\dados\cleaned\mun_conectividade_albers.tif
