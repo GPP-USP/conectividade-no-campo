@@ -34,3 +34,7 @@ dados/cleaned/clip_demanda_v5_albers_clip.tif.aux.xml
 dados/cleaned/mun_conectividade_albers.tif.aux.xml
 dados/raw/legenda_demanda_conectividade.txt
 dados/processed/demanda_conectividade_mun.csv
+dados/processed/mun_conectividade_albers.tif.aux.xml
+dados/processed/clip_demanda_v5_albers_clip.tif
+dados/processed/clip_demanda_v5_albers_clip.tif.aux.xml
+scripts/.Rhistory
