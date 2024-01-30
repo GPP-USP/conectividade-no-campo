@@ -30,3 +30,6 @@ dados/processed/extensao_mun_albers.xlsx
 dados/processed/extensao_mun_albers.qmd
 dados/cleaned/clip_demanda_v5_albers_clip.tif
 dados/cleaned/mun_conectividade_albers.tif
+dados/cleaned/clip_demanda_v5_albers_clip.tif.aux.xml
+dados/cleaned/mun_conectividade_albers.tif.aux.xml
+dados/raw/legenda_demanda_conectividade.txt
