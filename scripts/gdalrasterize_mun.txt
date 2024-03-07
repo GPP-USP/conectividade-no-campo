@@ -1,0 +1,5 @@
+## CONECTIVIDADE
+gdal_rasterize -a CD_MUN -l mun_conectividade_albers -ot UInt32 -tr 1000 1000 -te 4769350.64341917 8138046.97010598 6458232.70240898 11279679.3314372 -co "COMPRESS=DEFLATE" -co "ZLEVEL=9" -co "PREDICTOR=2" -co "BIGTIFF=IF_SAFER" -co "NUM_THREADS=6" D:\GIT_WORKSPACE\conectividade-no-campo\dados\processed\mun_conectividade_albers.shp D:\GIT_WORKSPACE\conectividade-no-campo\dados\cleaned\mun_conectividade_albers.tif
+
+## USO DO SOLO
+gdal_rasterize -a CD_MUN -l mun_conectividade_albers -ot UInt32 -ts 57993 107877 -te 4769351.3211000002920628 8138072.7696000002324581 6458220.5374999996274710 11279661.3140999991446733 -co "COMPRESS=DEFLATE" -co "ZLEVEL=9" -co "PREDICTOR=2" -co "BIGTIFF=IF_SAFER" -co "NUM_THREADS=6" C:\Users\bryan\Desktop\processed\mun_conectividade_albers.shp C:\Users\bryan\Desktop\processed\mun_conectividade_albers_2.tif
