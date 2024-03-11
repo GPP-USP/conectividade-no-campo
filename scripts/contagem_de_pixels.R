@@ -1,16 +1,16 @@
-# Limpeza do ambiente
+# LIMPEZA DO AMBIENTE
 rm(list=ls())
 
-# Carregando bilbiotecas
+# BIBLIOTECAS
 library(pacman)
-p_load(data.table, raster, rgdal, sf, fasterize, dplyr,exactextractr,tidyr)
+p_load(data.table, raster, rgdal, dplyr, tidyr)
 
-# Carregando rasters
-setwd("D:/GIT_WORKSPACE/conectividade-no-campo/dados/cleaned")
-values <- raster("clip_demanda_v5_albers_clip.tif")
-zones<-raster("mun_conectividade_albers.tif")
+# ARQUIVOS
+values <- raster("C:/Users/bryan/Desktop/processed/mapbiomas_reclassificado_corrijido.tif")
+zones<-raster("C:/Users/bryan/Desktop/processed/mun_conectividade_albers_2.tif")
+?zonal
 
-# Contagem dos pixels
+# CONTAGEM POR ZONAS
 bss <- blockSize(values, minrows = 78)
 bss$n
 value <- NA
@@ -22,20 +22,22 @@ for(i in 1:bss$n) {
   x <- data.frame(zone = getValues(zones,  row = bss$row[i], nrows = bss$nrows[i]),
                   value = getValues(values,  row = bss$row[i], nrows = bss$nrows[i]))
   x <- drop_na(x)
-  y <- x %>% group_by(zone, value)%>%summarise(area = n()*1)  
+  y <- x %>% group_by(zone, value)%>%summarise(area = n()*0.084)  
   z <- rbind(z,y)
   z <- z%>%group_by(zone, value)%>%summarise(area = sum(area, na.rm = T))
 }
 
-#Tratamento
-z<-z%>%rename(
-  demanda=value,
-  area_km2=area,
+print(z)
+
+# Organizando o data frame
+z<-z%>%rename(   #renomeando colunas
+  classe=value,
+  area_ha=area,
   cd_mun=zone
 )
-
-table_conec <- z[-c(1:10, 80),]
+z_filtrado <- z %>%   #removendo valores nulos e NA
+  filter(!is.na(cd_mun) & cd_mun !=0)
 
 # Exportar tabela
-write.table(table_conec, "D:/GIT_WORKSPACE/conectividade-no-campo/dados/cleaned/demanda_conectividade_mun.csv",
+write.table(z, "C:/Users/bryan/Desktop/cleaned/areas_usoeocupacao.csv",
              row.names = F, sep = ";", dec = ",")
