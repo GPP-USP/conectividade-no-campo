@@ -8,7 +8,6 @@ p_load(data.table, raster, rgdal, dplyr, tidyr)
 # ARQUIVOS
 values <- raster("C:/Users/bryan/Desktop/processed/mapbiomas_reclassificado_corrijido.tif")
 zones<-raster("C:/Users/bryan/Desktop/processed/mun_conectividade_albers_2.tif")
-?zonal
 
 # CONTAGEM POR ZONAS
 bss <- blockSize(values, minrows = 78)
