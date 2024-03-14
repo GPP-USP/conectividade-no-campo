@@ -80,3 +80,17 @@ dados/cleaned/demanda_conectividade_mun_organizada.xlsx
 dados/processed/mun_conectividade_albers.tif
 dados/cleaned/demanda_conectividade_mun_organizada.xlsx
 dados/cleaned/demanda_conectividade_mun_organizada.xlsx
+dados/cleaned/pontos_conectividade_lagoinha.cpg
+dados/cleaned/pontos_conectividade_lagoinha.dbf
+dados/cleaned/pontos_conectividade_lagoinha.prj
+dados/cleaned/pontos_conectividade_lagoinha.qmd
+dados/cleaned/pontos_conectividade_lagoinha.shp
+dados/cleaned/pontos_conectividade_lagoinha.shx
+dados/raw/mun_lagoinha.cpg
+dados/raw/mun_lagoinha.dbf
+dados/raw/mun_lagoinha.prj
+dados/raw/mun_lagoinha.qmd
+dados/raw/mun_lagoinha.shp
+dados/raw/mun_lagoinha.shx
+dados/raw/pontos_conectividade.csv
+dados/raw/pontos_conectividade.xlsx
