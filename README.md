@@ -1,5 +1,5 @@
 
-![transferir](https://github.com/GPP-USP/conectividade-no-campo/assets/30662095/8d4a2bf3-275f-44cd-96cb-f9be28349aa7)
+![transferir](https://github.com/GPP-USP/conectividade-no-campo/assets/30662095/8d4a2bf3-275f-44cd-96cb-f9be28349aa7](http://url/to/img.png](https://github.com/GPP-USP/ICS-Amazonia-legal/blob/main/logo-gpp.png)
 
 # conectividade-no-campo
 Repositório dedicado à exploração de dados de conectividade no campo
